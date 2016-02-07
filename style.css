@@ -1,0 +1,27 @@
+
+.container{
+	border: 1px #ffa500 solid;
+	height: 100%;
+	text-align: right;
+}
+.well{
+	text-align: center;
+
+}
+.footer{
+	text-align: center;
+	margin: 10px;
+	background-color: black;
+	color: white;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.navbar{
+	background-color: #ffa500;
+	height: 20px;
+	padding: 5px;
+	text-align: center;
+}
+.mynd{
+	text-align: right;
+}
