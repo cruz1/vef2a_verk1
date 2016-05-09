@@ -1,21 +1,14 @@
 <?php 
-$myndir = [
-	['file' => 'bobross',
-	'caption' => 'falleg tré'],
-	['file' => 'pinkfloyd', 
-	'caption' => 'Dark side of the moon'],
-	['file' => 'sea',
-	'caption' => 'sjorinn er flottur'],
-	['file' => 'tree',
-	'caption' => 'thetta er flott background.']
-];
 
-$i = rand(0, count($myndir)-1);
 
-$valdnarMyndir = "{$myndir[$i]['file']}.jpg";
-$caption = $myndir[$i]['caption'];
+$mynd = ['bobross','pinkfloyd','sea','tree'];
+$caption = ['falleg tré','Dark side of the Moon','Sjorinn er flottur','þetta er flott background'];
+$i = rand(0, count($mynd)-1);
+
+$myndi = "$mynd[$i].jpg";
+$caption = $caption[$i];
 
 
 ?>
-	<img src="<?= $valdnarMyndir; ?>" alt="Random image">
-	<?php echo $caption; ?>
+<img src="images/<?php echo $myndi; ?>" alt="Random image">
+<?php echo $caption +"ok"; ?>
